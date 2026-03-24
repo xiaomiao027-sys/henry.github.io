@@ -1,0 +1,7 @@
+Segment,Customer_Count,Pct_of_Customers,Avg_Recency_Days,Avg_Frequency,Avg_Monetary,Total_Revenue,Revenue_Pct
+High-Value Sleepers,1361,31.4,14.0,7.5,3497.0,4758886.0,53.5
+High-Value Lost,1220,28.1,111.0,3.4,1638.0,1998650.0,22.5
+Champions,21,0.5,4.0,78.1,76494.0,1606380.0,18.1
+Lost Customers,1345,31.0,178.0,1.3,250.0,336321.0,3.8
+New Customers,390,9.0,17.0,1.6,272.0,106121.0,1.2
+At-Risk Champions,1,0.0,39.0,63.0,80851.0,80851.0,0.9
