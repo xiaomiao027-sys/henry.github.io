@@ -15,7 +15,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
             min-height: 100vh;
             color: #333;
         }
@@ -65,7 +65,7 @@
         }
         
         .card h3 {
-            color: #667eea;
+            color: #2c3e50;
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
@@ -78,7 +78,7 @@
             padding: 15px;
             background: #f8f9fa;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #2c3e50;
         }
         
         .metric-label {
@@ -120,7 +120,7 @@
         }
         
         .insight-card h4 {
-            color: #667eea;
+            color: #2c3e50;
             margin-bottom: 10px;
             font-size: 1.2rem;
         }
@@ -133,7 +133,7 @@
         .btn {
             display: inline-block;
             padding: 12px 25px;
-            background: #667eea;
+            background: #2c3e50;
             color: white;
             text-decoration: none;
             border-radius: 8px;
@@ -143,7 +143,7 @@
         }
         
         .btn:hover {
-            background: #5a6fd8;
+            background: #34495e;
         }
         
         .github-link {
@@ -185,13 +185,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>🛒 E-Commerce Data Analysis</h1>
+            <h1>E-Commerce Data Analysis</h1>
             <p>UK Retail Transaction Analysis (2010-2011) - Interactive Dashboard</p>
         </header>
 
         <div class="dashboard-grid">
             <div class="card">
-                <h3>📊 Key Metrics</h3>
+                <h3>Key Metrics</h3>
                 <div class="metric">
                     <span class="metric-label">Total Revenue</span>
                     <span class="metric-value">£8.2M</span>
@@ -211,55 +211,55 @@
             </div>
 
             <div class="card">
-                <h3>📈 Sales Trend</h3>
+                <h3>Sales Trend</h3>
                 <div class="chart-container">
                     <canvas id="salesTrendChart"></canvas>
                 </div>
             </div>
 
             <div class="card">
-                <h3>🌍 Geographic Distribution</h3>
+                <h3>Geographic Distribution</h3>
                 <div class="chart-container">
                     <canvas id="geoChart"></canvas>
                 </div>
             </div>
 
             <div class="card">
-                <h3>⏰ Time Patterns</h3>
+                <h3>Time Patterns</h3>
                 <div class="chart-container">
                     <canvas id="timePatternChart"></canvas>
                 </div>
             </div>
         </div>
 
-        <h2 class="section-title">🎯 Business Insights</h2>
+        <h2 class="section-title">Business Insights</h2>
         
         <div class="insights-grid">
             <div class="insight-card">
-                <h4>🏆 Customer Segmentation</h4>
+                <h4>Customer Segmentation</h4>
                 <p>Identified 5 distinct customer segments using RFM analysis. Champions segment represents 15% of customers but contributes 45% of revenue.</p>
             </div>
             
             <div class="insight-card">
-                <h4>📅 Seasonal Patterns</h4>
+                <h4>Seasonal Patterns</h4>
                 <p>Peak sales occur in November (pre-Christmas) with 35% increase over average. Best shopping hours are 12PM-2PM.</p>
             </div>
             
             <div class="insight-card">
-                <h4>🛍️ Product Performance</h4>
+                <h4>Product Performance</h4>
                 <p>Top 10% of products generate 60% of revenue. Home decor and gifts category shows highest growth potential.</p>
             </div>
             
             <div class="insight-card">
-                <h4>🌐 International Markets</h4>
+                <h4>International Markets</h4>
                 <p>While UK dominates (91% revenue), European markets show 3.5x growth potential with targeted marketing.</p>
             </div>
         </div>
 
         <div class="github-link">
-            <a href="https://github.com/xiaomiao027-sys/henry.github.io" class="btn">📂 View Source Code</a>
-            <a href="https://www.kaggle.com/datasets/carrie1/ecommerce-data" class="btn">📊 Dataset</a>
-            <a href="https://github.com/xiaomiao027-sys/henry.github.io" class="btn">🔍 Full Analysis</a>
+            <a href="https://github.com/xiaomiao027-sys/henry.github.io" class="btn">View Source Code</a>
+            <a href="https://www.kaggle.com/datasets/carrie1/ecommerce-data" class="btn">Dataset</a>
+            <a href="https://github.com/xiaomiao027-sys/henry.github.io" class="btn">Full Analysis</a>
         </div>
     </div>
 
@@ -273,8 +273,8 @@
                 datasets: [{
                     label: 'Monthly Sales (£)',
                     data: [550000, 580000, 620000, 590000, 650000, 680000, 720000, 690000, 750000, 820000, 1100000, 950000],
-                    borderColor: '#667eea',
-                    backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                    borderColor: '#2c3e50',
+                    backgroundColor: 'rgba(44, 62, 80, 0.1)',
                     borderWidth: 3,
                     fill: true,
                     tension: 0.4
@@ -310,11 +310,11 @@
                 datasets: [{
                     data: [91, 3, 2, 1.5, 2.5],
                     backgroundColor: [
-                        '#667eea',
-                        '#764ba2',
-                        '#f093fb',
-                        '#f5576c',
-                        '#4facfe'
+                        '#2c3e50',
+                        '#34495e',
+                        '#3498db',
+                        '#5dade2',
+                        '#85c1e9'
                     ],
                     borderWidth: 2,
                     borderColor: '#fff'
@@ -347,8 +347,8 @@
                 datasets: [{
                     label: 'Sales Amount (£)',
                     data: [15000, 35000, 65000, 85000, 92000, 78000, 45000, 25000],
-                    backgroundColor: 'rgba(102, 126, 234, 0.8)',
-                    borderColor: '#667eea',
+                    backgroundColor: 'rgba(44, 62, 80, 0.8)',
+                    borderColor: '#2c3e50',
                     borderWidth: 2
                 }]
             },
