@@ -9,9 +9,6 @@ This repository contains a comprehensive financial product analysis report with 
 - **[RFM Customer Segmentation](./projects/rfm_analysis.md)** - Customer segmentation analysis
 - **[Product Performance Analysis](./projects/product_analysis.html)** - E-commerce product analysis
 
-###  Quick Access
-- **Main Portfolio**: [main.html](./main.html)
-- **GitHub Pages**: https://xiaomiao027-sys.github.io (once deployed)
 
 ###  Contact
 - **Email**: xiaomiao027@outlook.com
