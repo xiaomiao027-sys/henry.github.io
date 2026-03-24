@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Product Analysis Report</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #1e3c72;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 10px;
+            margin: 30px 0 20px 0;
+        }
+        
+        h3 {
+            color: #2a5298;
+            margin: 20px 0 10px 0;
+        }
+        
+        .chart-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .chart-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-buttons {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+        }
+        
+        .btn.secondary {
+            background: linear-gradient(45deg, #28a745, #20c997);
+        }
+        
+        .btn.secondary:hover {
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .findings {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .findings ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .findings li {
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .findings li:last-child {
+            border-bottom: none;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #1e3c72;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-buttons">
+            <a href="../index.html" class="btn secondary">🏠 Main Portfolio</a>
+            <a href="../financial/index.html" class="btn">💰 Financial Focus</a>
+        </div>
+        
+        <div class="header">
+            <h1>Financial Product Analysis Report</h1>
+            <p>Comprehensive analysis of financial products including stocks, bonds, funds, and investment strategies</p>
+        </div>
+        
+        <div class="content">
+            <h2>Project Overview</h2>
+            <p>This report conducts an in-depth analysis of mainstream financial products in the current market, including stocks, bonds, funds, derivatives, and other categories. It evaluates product performance, risk-return characteristics, and investment value using quantitative analysis methods.</p>
+            
+            <h2>Analysis Objectives</h2>
+            <ul>
+                <li>Evaluate risk-return characteristics of different financial products</li>
+                <li>Identify market trends and investment opportunities</li>
+                <li>Provide data-driven decision support for investors</li>
+                <li>Develop optimized asset allocation recommendations</li>
+            </ul>
+            
+            <h2>Key Findings</h2>
+            
+            <h3>1. Stock Market Analysis</h3>
+            <div class="chart-container">
+                <img src="../images/stock_performance.png" alt="Stock Performance Analysis">
+            </div>
+            
+            <div class="findings">
+                <ul>
+                    <li><span class="highlight">Price Trend</span>: Overall upward trend with high volatility</li>
+                    <li><span class="highlight">Return Distribution</span>: Approximately normal distribution with slight right skewness</li>
+                    <li><span class="highlight">Trading Volume</span>: High market activity and ample liquidity</li>
+                    <li><span class="highlight">Cumulative Return</span>: Significant long-term investment returns</li>
+                </ul>
+            </div>
+            
+            <h3>Sector Performance Analysis</h3>
+            <div class="chart-container">
+                <img src="../images/sector_analysis.png" alt="Sector Analysis">
+            </div>
+            
+            <div class="findings">
+                <ul>
+                    <li><span class="highlight">Technology Sector</span>: Annualized return of 15.2%, leading all sectors</li>
+                    <li><span class="highlight">Consumer Sector</span>: Steady growth with 10.8% annualized return</li>
+                    <li><span class="highlight">Financial Sector</span>: Valuation recovery with 8.5% annualized return</li>
+                    <li><span class="highlight">Healthcare Sector</span>: 12.3% annualized return under policy influence</li>
+                </ul>
+            </div>
+            
+            <h3>2. Bond Market Analysis</h3>
+            <div class="chart-container">
+                <img src="../images/fund_comparison.png" alt="Fund Comparison Analysis">
+            </div>
+            
+            <h3>3. Portfolio Analysis</h3>
+            <div class="chart-container">
+                <img src="../images/portfolio_analysis.png" alt="Portfolio Analysis">
+            </div>
+            
+            <h3>4. Investment Recommendations</h3>
+            <div class="chart-container">
+                <img src="../images/financial_summary.png" alt="Financial Analysis Summary">
+            </div>
+            
+            <div class="findings">
+                <ul>
+                    <li><span class="highlight">Conservative Portfolio</span>: 40% stocks, 50% bonds, 10% cash</li>
+                    <li><span class="highlight">Balanced Portfolio</span>: 60% stocks, 35% bonds, 5% cash</li>
+                    <li><span class="highlight">Aggressive Portfolio</span>: 80% stocks, 15% bonds, 5% alternatives</li>
+                    <li><span class="highlight">Expected Returns</span>: 6-12% annually based on risk tolerance</li>
+                </ul>
+            </div>
+            
+            <h2>Conclusion</h2>
+            <p>This comprehensive analysis provides valuable insights for investment decision-making. The key findings suggest that a diversified portfolio approach with proper risk management can achieve optimal risk-adjusted returns. Investors should consider their risk tolerance and investment horizon when implementing these recommendations.</p>
+            
+            <div class="nav-buttons" style="margin-top: 40px;">
+                <a href="../financial/index.html" class="btn">🔙 Back to Financial Portfolio</a>
+                <a href="../index.html" class="btn secondary">🏠 Main Portfolio</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
