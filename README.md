@@ -113,25 +113,25 @@ ecommerce-analysis/
 ## License
 This dataset is provided for educational purposes. Please check the original dataset license for usage terms.
 
-## 🚀 Live Dashboard
+##  Live Dashboard
 Visit our interactive dashboard: [https://xiaomiao027-sys.github.io/henry.github.io/](https://xiaomiao027-sys.github.io/henry.github.io/)
 
 ### Dashboard Features
-- 📊 Interactive sales charts
-- 🌍 Geographic distribution analysis
-- ⏰ Time pattern visualization
-- 🎯 Customer segmentation insights
-- 📱 Mobile-responsive design
-- 🎨 Professional UI/UX
+-  Interactive sales charts
+-  Geographic distribution analysis
+-  Time pattern visualization
+-  Customer segmentation insights
+-  Mobile-responsive design
+-  Professional UI/UX
 
-## 📊 Key Findings
+##  Key Findings
 - **Total Revenue**: £8.2M across 13 months
 - **Peak Sales**: November 2011 (pre-Christmas)
 - **Top Customers**: 4,372 unique customers
 - **Best Products**: 3,687 unique items
 - **Average Order Value**: £21.73
 
-## 🎯 Strategic Recommendations
+##  Strategic Recommendations
 - Implement RFM-based customer segmentation
 - Optimize inventory based on demand patterns
 - Expand into European markets
