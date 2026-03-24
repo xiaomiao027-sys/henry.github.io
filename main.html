@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry - Data Analytics Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .project-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .contact {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-links a:hover {
+            color: #764ba2;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #666;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin: 2px;
+        }
+        
+        .status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Henry · Data Analytics Portfolio</h1>
+            <p>📊 Telling stories with data | 📍 Hong Kong | 📧 xiaomiao027@outlook.com</p>
+            <div class="status">
+                ✅ GitHub Pages is working! Financial analysis report is available.
+            </div>
+        </div>
+        
+        <div class="projects">
+            <div class="project-card">
+                <h2>📈 Financial Product Analysis</h2>
+                <div class="tag">Python</div>
+                <div class="tag">Data Visualization</div>
+                <div class="tag">Risk Analysis</div>
+                <p>Comprehensive analysis of financial products including stocks, bonds, and funds with risk-return assessments and investment recommendations.</p>
+                <a href="projects/financial_product_analysis.md" class="btn">View Analysis</a>
+            </div>
+            
+            <div class="project-card">
+                <h2>🛒 RFM Customer Segmentation</h2>
+                <div class="tag">Python</div>
+                <div class="tag">RFM Model</div>
+                <div class="tag">Customer Analytics</div>
+                <p>Analyzed 500K+ transaction records to build RFM model, segmenting customers into 5 groups and providing actionable business strategies.</p>
+                <a href="projects/rfm_analysis.md" class="btn">View Analysis</a>
+            </div>
+            
+            <div class="project-card">
+                <h2>📊 Product Performance Analysis</h2>
+                <div class="tag">Python</div>
+                <div class="tag">E-commerce</div>
+                <div class="tag">Business Intelligence</div>
+                <p>Comprehensive e-commerce product analysis with performance metrics, trend analysis, and business recommendations.</p>
+                <a href="projects/product_analysis.html" class="btn">View Analysis</a>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <h2>📫 Get in Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:xiaomiao027@outlook.com">📧 xiaomiao027@outlook.com</a>
+                <a href="https://github.com/xiaomiao027-sys">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/hon-yue-cheung-3a3a04386/">💼 LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
