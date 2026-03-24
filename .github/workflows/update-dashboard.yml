@@ -1,0 +1,82 @@
+name: Update Dashboard Data
+
+on:
+  schedule:
+    # Run every 5 minutes
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Generate Dashboard Data
+      run: |
+        python << 'EOF'
+        import json
+        import random
+        from datetime import datetime
+        
+        # Generate e-commerce data
+        ecommerce_data = {
+            "timestamp": datetime.now().isoformat(),
+            "total_customers": random.randint(500000, 600000),
+            "revenue": random.randint(2000000, 3000000),
+            "conversion_rate": round(random.uniform(14.0, 16.5), 1),
+            "top_customer_revenue": round(random.uniform(45.0, 52.0), 1),
+            "sales_trend": [random.randint(100000, 150000) for _ in range(30)],
+            "rfm_segments": {
+                "Champions": random.randint(12, 18),
+                "Loyal": random.randint(20, 30),
+                "Potential": random.randint(18, 25),
+                "New": random.randint(20, 30),
+                "At Risk": random.randint(10, 20)
+            }
+        }
+        
+        # Generate financial data
+        financial_data = {
+            "timestamp": datetime.now().isoformat(),
+            "portfolio_value": random.randint(1000000, 1500000),
+            "annual_return": round(random.uniform(10.0, 15.0), 1),
+            "volatility": round(random.uniform(6.0, 10.0), 1),
+            "sharpe_ratio": round(random.uniform(1.2, 2.0), 2),
+            "portfolio_performance": [1000000 + i * random.randint(10000, 50000) for i in range(30)],
+            "risk_metrics": {
+                "market": random.randint(50, 80),
+                "credit": random.randint(30, 60),
+                "liquidity": random.randint(20, 40),
+                "operational": random.randint(15, 35),
+                "legal": random.randint(10, 25)
+            },
+            "sector_allocation": {
+                "Technology": random.randint(30, 40),
+                "Healthcare": random.randint(20, 30),
+                "Finance": random.randint(15, 25),
+                "Consumer": random.randint(10, 20),
+                "Energy": random.randint(5, 15)
+            }
+        }
+        
+        # Save data files
+        with open('ecommerce_data.json', 'w') as f:
+            json.dump(ecommerce_data, f, indent=2)
+            
+        with open('financial_data.json', 'w') as f:
+            json.dump(financial_data, f, indent=2)
+        EOF
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        publish_branch: gh-pages
