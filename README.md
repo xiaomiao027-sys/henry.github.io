@@ -18,6 +18,10 @@
 - **GitHub Pages**: https://xiaomiao027-sys.github.io/dashboard.html (if available)
 - **Direct Access**: https://raw.githubusercontent.com/xiaomiao027-sys/henry.github.io/main/dashboard.html
 
+#### 💰 **Financial Dashboard**
+- **GitHub Pages**: https://xiaomiao027-sys.github.io/financial_dashboard.html (if available)
+- **Direct Access**: https://raw.githubusercontent.com/xiaomiao027-sys/henry.github.io/main/financial_dashboard.html
+
 ### 📋 Available Reports
 - **[Financial Product Analysis](./projects/financial_product_analysis.md)** - Comprehensive analysis of stocks, bonds, and funds
 - **[RFM Customer Segmentation](./projects/rfm_analysis.md)** - Customer segmentation analysis
